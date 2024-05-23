@@ -1,6 +1,7 @@
 #ifndef __COMPUTER__H
 #define __COMPUTER__H
 #include "Base.h"
+
 #include "model.h"
 
 using namespace std;
