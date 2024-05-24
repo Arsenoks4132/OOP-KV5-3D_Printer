@@ -24,7 +24,6 @@ void filament::refill_coil_handler(string message)
         this->cur_length = this->length;
         this->refill_ticks = 2;
         emit_signal(SIGNAL_D(filament::signal_refill_end), message);
-        return;
     }
 }
 

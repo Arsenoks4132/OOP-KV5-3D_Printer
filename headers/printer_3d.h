@@ -6,8 +6,6 @@
 #include "filament.h"
 #include "model.h"
 
-using namespace std;
-
 class printer_3d : public Base
 {
 public:

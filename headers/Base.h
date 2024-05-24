@@ -62,9 +62,7 @@ public:
 	void emit_signal(TYPE_SIGNAL p_signal, string &s_command);
 
 	string absolute_path();
-
 	void set_ready();
-
 	// KV_4_______________________
 
 protected:
@@ -80,7 +78,7 @@ protected:
 
 	// KV_4______________________
 	vector<o_sh *> connects;
-	// KV_2______________________
+	// KV_4______________________
 };
 
 #endif

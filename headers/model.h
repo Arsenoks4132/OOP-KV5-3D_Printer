@@ -2,8 +2,6 @@
 #define __MODEL__H
 #include "Base.h"
 
-using namespace std;
-
 class model : public Base
 {
 public:

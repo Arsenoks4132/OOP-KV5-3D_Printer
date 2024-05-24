@@ -4,8 +4,6 @@
 
 #include "model.h"
 
-using namespace std;
-
 class computer : public Base
 {
 public:

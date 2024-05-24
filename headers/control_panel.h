@@ -2,8 +2,6 @@
 #define __CONTROL_PANEL__H
 #include "Base.h"
 
-using namespace std;
-
 class control_panel : public Base
 {
 public:

@@ -100,7 +100,7 @@ void printer_3d ::try_grab_model_handler(string message)
     {
         this->state = 2;
         this->current_model = message;
-        emit_signal(SIGNAL_D(signal_copy_model), message);
+        emit_signal(SIGNAL_D(printer_3d::signal_copy_model), message);
         return;
     }
     this->state = 3;

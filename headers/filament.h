@@ -2,8 +2,6 @@
 #define __FILAMENT__H
 #include "Base.h"
 
-using namespace std;
-
 class filament : public Base
 {
 public:

@@ -3,7 +3,6 @@
 control_panel ::control_panel(Base *ptr) : Base(ptr, "Control_Panel") {}
 
 // Signals
-
 void control_panel ::signal_send_settings(string &message) {}
 void control_panel ::signal_turn_off(string &message) {}
 void control_panel ::signal_claim_system_info(string &message) {}
@@ -36,7 +35,7 @@ void control_panel ::new_command_handler(string message)
     {
         if (message == "Turn off the system")
         {
-            this->emit_signal(SIGNAL_D(control_panel::signal_turn_off), message);
+            emit_signal(SIGNAL_D(control_panel::signal_turn_off), message);
             return;
         }
         stringstream console(message);

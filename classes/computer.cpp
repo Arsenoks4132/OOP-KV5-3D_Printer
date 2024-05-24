@@ -35,24 +35,24 @@ void computer ::info_for_info_table_handler(string message)
             text += " " + leaves[i]->getName() + ";";
         }
     }
-    emit_signal(SIGNAL_D(signal_pc_display_text), text);
+    emit_signal(SIGNAL_D(computer::signal_pc_display_text), text);
 }
 
 void computer ::add_new_model_handler(string message)
 {
     stringstream parms(message);
     int volume;
-    string type, name;
+    string type, name_;
     parms >> volume >> type;
     parms.ignore();
-    getline(parms, name);
-    if (this->find_tree(name))
+    getline(parms, name_);
+    if (this->find_tree(name_))
     {
         message = "Failed to create product";
         emit_signal(SIGNAL_D(computer::signal_pc_display_text), message);
         return;
     }
-    new model(this, name, type, volume);
+    new model(this, name_, type, volume);
 }
 
 void computer ::send_model_handler(string message)

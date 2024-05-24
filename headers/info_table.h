@@ -2,8 +2,6 @@
 #define __INFO_TABLE__H
 #include "Base.h"
 
-using namespace std;
-
 class info_table : public Base
 {
 public:
